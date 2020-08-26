@@ -6,5 +6,9 @@ export class ThemeService {
     // isThemeDark: boolean = false;
 
     private isThemeDark = new BehaviorSubject<boolean>(false);
-    isExpandChanges: Observable<boolean> = this.isThemeDark.asObservable();
+    isThemeDark$: Observable<boolean> = this.isThemeDark.asObservable();
+
+    toggleTheme(isDark: boolean): void {
+        this.isThemeDark.next(isDark);
+    }
 }
