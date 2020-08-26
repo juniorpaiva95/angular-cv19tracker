@@ -1,5 +1,14 @@
+cv-card {
+    flex: 1;
+    &:last-child {
+        margin-right: -20px;
+    }
+}
 .cv-card {
-    width: 250px;
+    
+    // width: 250px;
+    // flex: 1;
+    margin-right: 20px;
     height: 100px;
     background-color: #262626;
     text-align: center;

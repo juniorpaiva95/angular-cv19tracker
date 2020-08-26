@@ -49,7 +49,8 @@ body.loaded .preloader {
 }
 
 body:not(.loaded) {
-  overflow: hidden;
+  position: relative;
+  //overflow: hidden;
 }
 
 body.loaded>div.preloader {
