@@ -11,4 +11,44 @@
     animation-delay: 1s;
     animation-duration: 1s;
     animation-fill-mode: both;
+
+    &:hover {
+        &::before {
+            height: 100%;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &--confirmed::before {
+        content: "";
+        border-radius: 100px;
+        position: relative;
+        display: block;
+        width: 5px;
+        height: 30px;
+        left: -46px;
+        background-color: $yellow;
+    }
+
+    &--recovered::before {
+        content: "";
+        border-radius: 100px;
+        position: relative;
+        display: block;
+        width: 5px;
+        height: 30px;
+        left: -46px;
+        background-color: $card-recovered;
+    }
+
+    &--deaths::before {
+        content: "";
+        border-radius: 100px;
+        position: relative;
+        display: block;
+        width: 5px;
+        height: 30px;
+        left: -46px;
+        background-color: $card-deaths;
+    }
 }

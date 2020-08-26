@@ -14,4 +14,8 @@ export class Covid19BrazilService {
         return this.http.get(`${this.baseUrl}/${country}`);
     }
 
+    getWorldTotalCount(): Observable<any> {
+        return this.http.get('https://api.covid19api.com/world/total');
+    }
+
 }
