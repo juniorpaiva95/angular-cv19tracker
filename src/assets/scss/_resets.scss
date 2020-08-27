@@ -6,6 +6,7 @@ body {
   color: $white-text !important;
   font-family: 'Poppins', sans-serif !important;
   transition: all .1s ease;
+  overflow-x: hidden;
 }
 
 p, h1 {

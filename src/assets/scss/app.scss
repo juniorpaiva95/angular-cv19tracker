@@ -1,16 +1,17 @@
 @import './resets';
 @import './variables';
 
+//Colors
 @import './colors';
 
+//Componentes
 @import './components/sidebar';
 @import './components/footer';
 @import './components/card';
 
 .main-content {
-    margin-left: 230px;
-    padding: 50px 0;
-    max-width: 1000px;
+    padding-left: 5rem;
+    margin: 0 50px;
 }
 a {
     color: $yellow;

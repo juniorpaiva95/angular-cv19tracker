@@ -7,7 +7,7 @@ import { Component, Input, HostBinding, OnInit } from "@angular/core";
 export class CardComponent implements OnInit {
 
     // @HostBinding('class') 
-    @Input('class') classList: string = '';
+    @Input('custom-class') classList: string = '';
 
 
     ngOnInit() {

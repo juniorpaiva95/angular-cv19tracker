@@ -60,9 +60,9 @@ export class AppComponent implements OnInit, AfterViewInit {
       
         var backgroundColor = am4core.color("#1e2128");
         var activeColor = am4core.color("#ff8726");
-        var confirmedColor = am4core.color("#d21a1a");
+        var confirmedColor = am4core.color("#1c5fe5");
         var recoveredColor = am4core.color("#45d21a");
-        var deathsColor = am4core.color("#1c5fe5");
+        var deathsColor = am4core.color("#d21a1a");
       
         // for an easier access by key
         var colors = { active: activeColor, confirmed: confirmedColor, recovered: recoveredColor, deaths: deathsColor };

@@ -8,25 +8,25 @@
 
   </section>
   
-  <section class="d-flex row justify-content-between flex-wrap">
-    <cv-card [class]="'confirmed'" class="col-md-4 col-sm-12" data-toggle="tooltip"
+  <section class="row">
+    <cv-card [custom-class]="'confirmed'" class="col-md-4 col-sm-12" data-toggle="tooltip"
     data-placement="top" title="Casos totais confirmados">
       <h6 style="font-weight: 400;">Casos confirmados</h6>
       <h5 style="font-weight: 400;">{{ worldStatistics?.TotalConfirmed }}</h5>
     </cv-card>
-    <cv-card [class]="'recovered'" class="col-md-4 col-sm-12" data-toggle="tooltip"
+    <cv-card [custom-class]="'recovered'" class="col-md-4 col-sm-12" data-toggle="tooltip"
     data-placement="top" title="Casos totais recuperados">
       <h6 style="font-weight: 400;">Casos recuperados</h6>
       <h5 style="font-weight: 400;">{{ worldStatistics?.TotalRecovered }}</h5>
     </cv-card>
-    <cv-card [class]="'deaths'" class="col-md-4 col-sm-12" data-toggle="tooltip"
+    <cv-card [custom-class]="'deaths'" class="col-md-4 col-sm-12" data-toggle="tooltip"
     data-placement="top" title="Casos totais de óbitos confirmados">
       <h6 style="font-weight: 400;">Óbitos confirmados</h6>
       <h5 style="font-weight: 400;">{{ worldStatistics?.TotalDeaths }}</h5>
     </cv-card>
   </section>
 
-  <section class="m-t-2">
+  <section class="mt-4">
     <div id="chartdiv"></div>
   </section>
   
