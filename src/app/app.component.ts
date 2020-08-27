@@ -179,6 +179,7 @@ export class AppComponent implements OnInit, AfterViewInit {
         mapChart.zoomControl.marginRight = 15;
         mapChart.zoomControl.valign = "middle";
         mapChart.homeGeoPoint = { longitude: 0, latitude: -2 };
+        mapChart.responsive.enabled = true;
 
         // by default minus button zooms out by one step, but we modify the behavior so when user clicks on minus, the map would fully zoom-out and show world data
         mapChart.zoomControl.minusButton.events.on("hit", showWorld);
