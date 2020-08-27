@@ -1,5 +1,8 @@
 @import './resets';
 @import './variables';
+@import './mixins';
+
+@import './animations';
 
 //Colors
 @import './colors';
@@ -9,6 +12,11 @@
 @import './components/footer';
 @import './components/card';
 
+#chartdiv {
+    width: 100%;
+    height: 800px;
+    background-color:#212327;
+}
 .main-content {
     padding-left: 5rem;
     margin: 0 50px;

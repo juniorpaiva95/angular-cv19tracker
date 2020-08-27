@@ -1,9 +1,9 @@
 footer {
-    // position: absolute;/
-    // top: 50%;
-    // left: calc(50% + 5rem);
     margin-left: $sidebar-width;
     padding: 30px;
-    // bottom: 0;
-    // transform: translate(-50%, -50%);
+    @include animation('scaleAnimation 1.2s both 1s');
+    // animation-name: scaleAnimation;
+    // animation-delay: 1s;
+    // animation-duration: 1s;
+    // animation-fill-mode: both;
 }
