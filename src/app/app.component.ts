@@ -42,7 +42,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    setTimeout(() => this.isLoadedChart.next(true), 3000);
+    setTimeout(() => this.isLoadedChart.next(true), 1000);
     this.covidService.getWorldTotalCount().subscribe(result => {
       console.log(result)
       this.worldStatistics = result;
